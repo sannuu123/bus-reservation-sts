@@ -1,0 +1,74 @@
+package com.lti.cdetails.pojo;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="customer00")
+public class Customer 
+{
+	@Id
+	@Column(name="customerid")
+	private String CustId;
+	@Column(name="name")
+	private String CustName;
+	@Column(name="gender")
+	private String Gender;
+	@Column(name="age")
+	private String Age;
+	@Column(name="phoneno")
+	private string PhNo;
+	
+	@Override
+	public String toString() {
+		return "Customer [CustId=" + CustId + ", CustName=" + CustName + ", Gender=" + Gender + ", Age=" + Age
+				+ ", PhNo=" + PhNo + "]";
+	}
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Customer(String custId, String custName, String gender, String age, long phNo) {
+		super();
+		CustId = custId;
+		CustName = custName;
+		Gender = gender;
+		Age = age;
+		PhNo = phNo;
+	}
+	public String getCustId() {
+		return CustId;
+	}
+	public void setCustId(String custId) {
+		CustId = custId;
+	}
+	public String getCustName() {
+		return CustName;
+	}
+	public void setCustName(String custName) {
+		CustName = custName;
+	}
+	public String getGender() {
+		return Gender;
+	}
+	public void setGender(String gender) {
+		Gender = gender;
+	}
+	public String getAge() {
+		return Age;
+	}
+	public void setAge(String age) {
+		Age = age;
+	}
+	public long getPhNo() {
+		return PhNo;
+	}
+	public void setPhNo(long phNo) {
+		PhNo = phNo;
+	}
+	
+	
+	
+}

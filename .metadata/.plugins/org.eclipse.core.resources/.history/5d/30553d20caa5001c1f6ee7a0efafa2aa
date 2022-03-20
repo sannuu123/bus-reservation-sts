@@ -1,0 +1,8 @@
+package com.lti.cdetails.dao;
+
+import java.util.List;
+
+interface CustomerDAO {
+	public boolean addVehicle(CustomerDAO customer);
+	public List<CustomerDAO> getCustomer();
+}

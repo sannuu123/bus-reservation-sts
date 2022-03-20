@@ -1,0 +1,13 @@
+package com.lti.bus.dao;
+
+import java.util.List;
+
+import com.lti.bus.pojo.Bus;
+
+public interface BusDAO {
+	public boolean addBus(Bus bus);
+	public List<Bus> getBus();
+	
+	public boolean searchBus(String Source,)
+}
+

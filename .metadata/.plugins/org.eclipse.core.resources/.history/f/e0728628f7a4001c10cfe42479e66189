@@ -1,0 +1,62 @@
+package com.lti.bus.pojo;
+
+public class Bus 
+{
+	private String Source;
+    private String Destination;
+	private String ToFrom;
+	private String FromTo;
+	private String DateOfJourney;
+	
+	@Override
+	public String toString() {
+		return "Search [Source=" + Source + ", Destination=" + Destination + ", ToFrom=" + ToFrom + ", FromTo=" + FromTo
+				+ ", DateOfJourney=" + DateOfJourney + "]";
+	}
+	public Bus() {
+		super();
+	}
+	public Bus(String source, String destination, String toFrom, String fromTo, String dateOfJourney) {
+		super();
+		Source = source;
+		Destination = destination;
+		ToFrom = toFrom;
+		FromTo = fromTo;
+		DateOfJourney = dateOfJourney;
+	}
+	public String getSource() {
+		return Source;
+	}
+	public void setSource(String source) {
+		Source = source;
+	}
+	public String getDestination() {
+		return Destination;
+	}
+	public void setDestination(String destination) {
+		Destination = destination;
+	}
+	public String getToFrom() {
+		return ToFrom;
+	}
+	public void setToFrom(String toFrom) {
+		ToFrom = toFrom;
+	}
+	public String getFromTo() {
+		return FromTo;
+	}
+	public void setFromTo(String fromTo) {
+		FromTo = fromTo;
+	}
+	public String getDateOfJourney() {
+		return DateOfJourney;
+	}
+	public void setDateOfJourney(String dateOfJourney) {
+		DateOfJourney = dateOfJourney;
+	}
+	
+	
+	
+	
+
+}

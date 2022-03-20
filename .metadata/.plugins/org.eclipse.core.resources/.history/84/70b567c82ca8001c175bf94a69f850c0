@@ -1,0 +1,5 @@
+package com.lti.booking.controller;
+
+public class BookingController {
+
+}

@@ -1,0 +1,5 @@
+package com.lti.app.dao;
+
+public class VehicleDAOImpl {
+
+}

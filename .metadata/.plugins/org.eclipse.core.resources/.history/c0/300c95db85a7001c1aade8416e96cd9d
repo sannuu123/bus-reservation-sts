@@ -1,0 +1,26 @@
+package com.lti.bus.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lti.bus.dao.AdminBusDAO;
+import com.lti.bus.pojo.AdminBus;
+
+public class AdminBusServiceImpl implements AdminBusService  {
+
+	@Autowired
+	AdminBusDAO bdao;
+
+@Override
+public boolean addAdminBus(AdminBus addbus) {
+	return bdao.addAdminBus(addbus);
+
+}
+
+@Override
+public List<AdminBus> addAdminBus() {
+	return bdao.addAdminBus();
+	
+}
+}

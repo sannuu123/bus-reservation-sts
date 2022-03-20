@@ -1,0 +1,5 @@
+package com.lti.cdetails.pojo;
+
+public class Customer {
+
+}

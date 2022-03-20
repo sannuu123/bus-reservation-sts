@@ -1,0 +1,5 @@
+package com.lti.bus.service;
+
+public class AdminBusServiceImpl {
+
+}

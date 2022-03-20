@@ -1,0 +1,26 @@
+package com.lti.cdetails.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lti.cdetails.pojo.Customer;
+import com.lti.cdetails.dao.CustomerDAO;
+
+public class CustomerServiceImpl implements CustomerService
+{
+@Autowired
+CustomerDAO cdao;
+
+	@Override
+	public boolean addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return cdao.addCustomer(customer);
+	}
+
+	@Override
+	public List<Customer> getCustomer() {
+		// TODO Auto-generated method stub
+		return cdao.getCustomer();
+	}
+}

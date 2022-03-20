@@ -1,0 +1,23 @@
+//package com.lti.bus.pojo;
+//
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
+//import javax.persistence.Table;
+//
+//@Entity
+//@Table(name="customer00")
+//public class BookBus {
+//	
+//		@Id
+//		@Column(name="pnrno")
+//		private String PNRno;
+//		@Column(name="name")
+//		private String CustName;
+//		@Column(name="tofrom")
+//		private String ToFrom;
+//		@Column(name="FromTo")
+//		private String fromto;
+//		@Column(name="")
+//		private String ;
+//}

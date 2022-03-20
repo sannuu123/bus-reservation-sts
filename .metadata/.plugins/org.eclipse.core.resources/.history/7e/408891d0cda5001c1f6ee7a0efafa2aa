@@ -1,0 +1,5 @@
+package com.lti.cdetails.dao;
+
+public class CustomerDAOImpl {
+
+}

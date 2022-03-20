@@ -1,0 +1,29 @@
+package com.lti.bus.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.lti.bus.pojo.Bus;
+
+@Repository
+public class BusDAOImpl implements BusDAO
+{
+	@Autowired
+	EntityManager eMan;
+
+	@Override
+	public boolean addBus(Bus bus) {
+		return true;
+	}
+
+	@Override
+	public List<Bus> getBus() {
+		return eMan.createQuery("from Bus").getResultList();
+	}
+	
+
+}

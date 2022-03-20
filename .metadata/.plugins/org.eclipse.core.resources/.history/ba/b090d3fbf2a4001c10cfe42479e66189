@@ -1,0 +1,5 @@
+package com.lti.bus.pojo;
+
+public class Search {
+
+}

@@ -1,0 +1,5 @@
+package com.lti.booking.DAO;
+
+public class BookingDAOImpl {
+
+}

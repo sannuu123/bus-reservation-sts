@@ -1,0 +1,90 @@
+package com.lti.airadd.pojo;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="addflight01")
+public class Airadd {
+
+	@Id
+	@Column(name="flightno")
+	private int fno;
+	@Column(name="from_dept")
+	private String from;
+	@Column(name="to_arrive")
+	private String to;
+	@Column(name="depart")
+	private LocalDate dep;
+	@Column(name="arrival")
+	private LocalDate arr;
+	@Column(name="Duration")
+	private int Dur;
+	@Column(name="Cabin")
+	private String cab;
+	public int getFno() {
+		return fno;
+	}
+	public void setFno(int fno) {
+		this.fno = fno;
+	}
+	public String getFrom() {
+		return from;
+	}
+	public void setFrom(String from) {
+		this.from = from;
+	}
+	public String getTo() {
+		return to;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public LocalDate getDep() {
+		return dep;
+	}
+	public void setDep(LocalDate dep) {
+		this.dep = dep;
+	}
+	public LocalDate getArr() {
+		return arr;
+	}
+	public void setArr(LocalDate arr) {
+		this.arr = arr;
+	}
+	public int getDur() {
+		return Dur;
+	}
+	public void setDur(int dur) {
+		Dur = dur;
+	}
+	public String getCab() {
+		return cab;
+	}
+	public void setCab(String cab) {
+		this.cab = cab;
+	}
+	public Airadd(int fno, String from, String to, LocalDate dep, LocalDate arr, int dur, String cab) {
+		super();
+		this.fno = fno;
+		this.from = from;
+		this.to = to;
+		this.dep = dep;
+		this.arr = arr;
+		this.Dur = dur;
+		this.cab = cab;
+	}
+	public Airadd() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Airadd [fno=" + fno + ", from=" + from + ", to=" + to + ", dep=" + dep + ", arr=" + arr + ", Dur=" + Dur
+				+ ", cab=" + cab + "]";
+	}
+}
+	
